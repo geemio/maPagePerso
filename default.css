@@ -1,0 +1,234 @@
+/* TAILLE DE LA POLICE
+-> taille absolue
+	ne prends pas en consideration l'utilisateur
+	en pixel (px)
+->taille relative
+	prends en consideration l'utilisateur
+	"words"
+		xx-small
+		x-small
+		small
+		medium
+		large
+		x-large
+		xx-large
+	"em"
+		1 em <=> taille normal du texte selon élément
+	"ex"
+		100% <=> taille normale
+
+	UTILISER DES POLICES PERSONALISEE
+	->télécharger la police
+	->des services propres aux polices d'écritures (google font)
+
+	COULEUR DE FOND
+		hexadecimales
+		word
+		rgb
+		rgba(25,255,255,0.5)
+
+*/
+.bienvenue
+{
+	color: red;
+}
+#logo
+{
+	margin-top: 30px;
+	width: 50px;
+}
+/* c'est trop beau */
+body
+{
+	font-family: 'Roboto', sans-serif;
+	background-color:  #e8e8e8;
+
+	
+	background-position: top center;
+}
+header
+{
+	margin-top:0 auto;
+	padding: 20px auto;
+	
+	text-align: center;
+	background-color: #1d1d1d;
+	color:white;
+	border: 1px black solid;
+	border-radius :15px;
+}
+h1
+{
+	font-family: 'ananda',sans-serif;
+}
+h2
+{
+	font-family: 'Open-Sans', sans-serif;
+	font-size: 1.5em;
+	width: 400px;
+	margin : auto;	
+}
+h3:before
+{
+	content: "\0027EA ";
+	color: grey;
+}
+h3
+{
+	text-transform: uppercase;
+	font-size: 1.5em;
+
+}
+h3:after
+{
+	content: " \0027EB";
+	color: grey;
+}
+section
+{
+	text-align: center;
+	margin-top: 50px;
+}
+li:hover
+{
+	font-weight: bold;
+}
+li
+{
+	list-style-type: none;
+	display: inline;
+	margin-left: 20px;
+}
+ul
+{
+	display: inline;
+}
+
+nav
+{
+	text-align: center;
+	background-color: white;
+	font-size: 1.1em;
+	box-shadow: 0 3px 1px -1px rgba(0, 0, 0, 0.5);
+	padding: 15px;
+
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+a:focus
+{
+	color:red;
+}
+/*a[title = "Contact"]
+{
+	display: block;
+}*/
+span
+{
+	display: block;
+	text-transform: uppercase;
+}
+
+footer
+{
+	color:white;
+	text-align: center;
+	background-color: #1d1d1d;
+	font-family: 'Roboto', sans-serif;
+	padding: 15px;
+}
+*
+{
+	box-sizing: border-box;
+}
+#projet
+{
+	display: flex;
+	flex-wrap:wrap;
+
+}
+#separateur
+{
+	width: 40px;
+	height: 1px;
+	margin-bottom: 15px;
+	margin:15px auto 15px auto;
+	display: block;
+	backgroung-color:#999;
+}
+#contact
+{
+	padding:30px;
+	margin-bottom: 50px;
+}
+#contact p
+{
+	border: 1px black solid;
+	border-radius :15px;
+}
+.projet
+{
+	width: 400px;
+	margin: 30px;
+	display: inline-block;
+	background-color: white;
+	padding-bottom: 15px;
+	border :0 black solid;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.projet:hover
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: 0.3s;
+}
+.projet img
+{
+	min-width: 400px;
+	height: 266px;
+
+}
+.picture
+{
+	width: 400px;
+	height: 266px;
+	overflow: hidden;
+	margin-bottom: 15px;
+
+}
+#picture-project img, #picture-project video, #picture-project iframe
+{
+	width: 80%;
+}
+.projet .date-projet
+{
+	font-size: 0.7em;
+	
+	
+}
+.conteneur
+{
+	width: 80%;
+	margin:auto;
+}
+
+/* POLICES */
+@font-face
+{
+	font-family: "ananda";
+	font-weight: bold;
+	src: url("../src/ananda_2/AnandaBlackPersonalUse.ttf") format('truetype');
+}
+/* MEDIA*/
+@media all and (max-width: 1000px)
+{
+	.projet {width: 100% , margin: 15px auto;}
+	.projet img { width: 100%, min-width: auto,height:auto;}
+	.projet .picture { width: 100%, height: auto; }
+	header h2 { width: 90% }
+}
